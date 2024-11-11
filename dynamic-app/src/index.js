@@ -1,4 +1,14 @@
 import React from "react";
 import ReactDom from "react-dom";
-var element = <div>Hello World</div>;
-ReactDom.render(element,document.getElementById("root"));
+import "jquery";
+import "popper.js/dist/umd/popper"
+import "bootstrap/dist/js/bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
+import NavBar from"./App";
+import "./index.css"
+
+
+// var element = <button className="btn btn-danger">Hello World</button>;
+// ReactDom.render(element,document.getElementById("root"));
+
+ReactDom.render(<NavBar/>,document.getElementById("root"));
